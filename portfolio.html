@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>My Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/cd74a4304c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-------------------------header------------------------------>
+
+	<div id="header">
+		<div class="container">
+			<nav>
+				<img src="image/logo.png" class="logo">
+				<ul id="sidemenu">
+					<li><a href="#header">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#Portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+				</ul>
+				<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+			</nav>
+			<div class="header-text">
+				<p>MCA Student</p>
+				<h1>Hi, I'm <span> Ruchita Sonawane </span> <br> from Shirpur, Maharashtra.</h1>
+			</div>
+		</div>
+	</div>
+
+<!------------------------------- about----------------------------->
+
+	<div id="about">
+		<div class="container">
+			<div class="row">
+				<div class="about-col-1">
+					<img src="image/ruchita.jpg">
+				</div>
+
+				<div class="about-col-2">
+					<h1 class="subtitle">About Me</h1>
+					<p>My name is Ruchita Sonawane. I have done my Post Graduation in MCA with 83.43% from North Maharashtra University and Graduation in BCA with 92.79% from same university. I have interest in Software Development. I have a knowledge of HTML, CSS, JavaScript, C, CPP, ASP.NET, SQL, MS-ACCESS. My strengths are positive attitude and self confidence.</p>
+
+					<div class="tab-titles">
+						<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+						<p class="tab-links" onclick="opentab('education')">Education</p>
+						<p class="tab-links" onclick="opentab('experience')">Experience</p>
+					</div>
+
+					<div class="tab-contents active-tab" id="skills">
+						<ul>
+							<li><span>Technical Skills</span><br>HTML, CSS, Javascript, jQuery, C, CPP, ASP.NET.</li>
+							<li><span>Database</span><br>SQL and MS-ACCESS.</li>
+						</ul>
+					</div>
+
+					<div class="tab-contents" id="education">
+						<ul>
+							<li><span>2016-2018</span><br>HSC from Maharashtra State Board with 80.77%.</li>
+							<li><span>2018-2021</span><br>BCA from North Maharashtra University with 92.79%.</li>
+							<li><span>2021-2023</span><br>MCA from North Maharashtra University with 83.43%.</li>
+						</ul>
+					</div>
+
+					<div class="tab-contents" id="experience">
+						<ul>
+							<li><span>Apr-June 2023</span><br>Web Development Internship at PHN Technology PVT LTD.</li>
+							<li><span>May 2023</span><br>Web Development Internship at CodeClause.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!----------------------------services--------------------->
+
+<div id="services">
+	<div class="container">
+		<h1 class="subtitle">My Services</h1>
+		<div class="services-list">
+			<div>
+				<i class="fa-solid fa-code"></i>
+				<h2>Web App Design</h2>
+				<p>Web App Designing using HTML, CSS, Javascript, C# and ASP.NET. </p>
+				<a href="#">Learn more</a>
+			</div>
+			<div>
+				<i class="fa-solid fa-crop"></i>
+				<h2>FrontEnd Design</h2>
+				<p>Design Frontend of Websites or WebApplications Using html, css, and javascript</p>
+				<a href="#">Learn more</a>
+			</div>
+			<div>
+				<i class="fa-brands fa-app-store"></i>
+				<h2>Database Design</h2>
+				<p>Database designing for Websites or Web Applications using MYSQL and MS-ACCESS.</p>
+				<a href="#">Learn more</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-----------------------porfolio--------------------->
+
+<div id="Portfolio">
+	<div class="container">
+		<h1 class="subtitle">My Projects</h1>
+		<div class="work-list">
+			<div class="work">
+				<img src="image/W1.jpg">
+				<div class="layer">
+					<h2>Restaurant Website</h2>
+					<p>This is a Restaurant Website created by using ASP.NET, HTML, CSS, JavaScript and SQL database. This website is contain information about restaurant like Menu, Speciality, Featured Dishes, Contact, etc. This website is used for online reservation of table in restaurant.</p>
+					<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>
+			<div class="work">
+				<img src="image/W2.jpg">
+				<div class="layer">
+					<h2>Coffee Shop Website</h2>
+					<p>This is a static website. It is created by using HTML, CSS, and JAvascript. It is just a front-end of website. This website contains a basic infomation about Coffee Shop.</p>
+					<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>
+			<div class="work">
+				<img src="image/W3.jpg">
+				<div class="layer">
+					<h2>Barber Shop Website</h2>
+					<p>This is a static website. It is created by using HTML, CSS, and JavaScript. Ths website contains a infomation about Barber Shop</p>
+					<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>	
+		</div>
+		<a href="#" class="btn">See More</a>
+	</div>
+</div>
+
+<!-----------contact------------>
+<div id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="contact-left">
+				<h1 class="subtitle">Contact Me</h1>
+				<p><i class="fa-solid fa-envelope"></i>ruchitasonawane17@gmail.com</p>
+				<p><i class="fa-solid fa-square-phone"></i>8956422471</p>
+				<div class="social-icons">
+					<a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+					<a href="https://github.com"><i class="fa-brands fa-github"></i></a>
+				</div>
+				<a href="image/my-resume.pdf" download class="btn btn2">Download Resume</a>
+			</div>
+			<div class="contact-right">
+				<form name="submit-to-google-sheet">
+					<input type="text" name="Name" placeholder="Your Name" required>
+					<input type="email" name="Email" placeholder="Your Mail" required>
+					<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+					<button class="btn btn2">Submit</button>
+				</form>
+				<span id="msg"></span>
+			</div>
+		</div>
+	</div>
+	<div class="copyright">
+		<p>Copyright © Ruchita<i class="fa-solid fa-heart"></i></p>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+	
+	var tablinks = document.getElementsByClassName("tab-links");
+	var tabcontents = document.getElementsByClassName("tab-contents");
+
+	function opentab(tabname) {
+		for(tablink of tablinks){
+			tablink.classList.remove("active-link");
+		}
+		for(tabcontent of tabcontents){
+			tabcontent.classList.remove("active-tab");
+		}
+		event.currentTarget.classList.add("active-link");
+		document.getElementById(tabname).classList.add("active-tab");
+	}
+</script>
+<script type="text/javascript">
+	
+	var sidemenu = document.getElementById("sidemenu");
+
+	function openmenu(){
+		sidemenu.style.right = "0";
+	}
+	function closemenu(){
+		sidemenu.style.right = "-200px"
+	}
+
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzCoY1--bSVRlPBvVgqBt4jDhD80PhCg5ixLRxS1kUeM8TVc6AJZ20m6RnA1lBlW4gf/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+      	msg.innerHTML = "Message Sent Successfully"
+      	setTimeout(function(){
+      		msg.innerHTML = ""
+      	},5000)
+      	form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
